@@ -1,4 +1,4 @@
-# decisionmaker project
+# Decisions Project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework!
 
