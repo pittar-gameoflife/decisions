@@ -24,8 +24,8 @@ public class CustomConfiguration {
     @Singleton
     public MeterFilter configureAllRegistries() {
         return MeterFilter.commonTags(Arrays.asList(
-                Tag.of("application", "gameoflife-decisions"), 
-                Tag.of("runtime", "quarkus")));
+                Tag.of("application", appName), 
+                Tag.of("runtime", appRuntime)));
     }
 
 }
