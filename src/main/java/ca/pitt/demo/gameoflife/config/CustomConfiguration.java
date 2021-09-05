@@ -2,8 +2,8 @@ package ca.pitt.demo.gameoflife.config;
 
 import java.util.Arrays;
 
+import javax.enterprise.inject.Produces;
 import javax.inject.Singleton;
-import javax.ws.rs.Produces;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
@@ -24,8 +24,8 @@ public class CustomConfiguration {
     @Singleton
     public MeterFilter configureAllRegistries() {
         return MeterFilter.commonTags(Arrays.asList(
-                Tag.of("application", appName), 
-                Tag.of("runtime", appRuntime)));
+                Tag.of("application", "gameoflife-decisions"), 
+                Tag.of("runtime", "quarkus")));
     }
 
 }
